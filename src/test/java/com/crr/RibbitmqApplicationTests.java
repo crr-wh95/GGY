@@ -31,6 +31,7 @@ class RibbitmqApplicationTests {
     }
     @Test
     public void bindingQueueAndExchange(){
+        System.out.println("11111111111");
         amqpAdmin.declareBinding(new Binding("amqp.crrqueue", Binding.DestinationType.QUEUE,"amqp.crrexchange","amqp.test",null));
     }
 
